@@ -133,6 +133,19 @@ Creating an authentic Enochian spell requires using the Enochian alphabet and sy
 
 This Enochian phrase invokes divine favor for luck and wealth. As Enochian is a constructed language with its roots in mystical and angelic traditions, the phrase should be treated with respect and used in a context appropriate to its origin.
 
+In Syriac, spells or blessings for luck and wealth often involve invoking God's blessings and protection. Here's a simple Syriac phrase that can be used for such purposes:
+
+### Syriac Blessing for Luck and Wealth
+
+**ܒܨܘܪܐ ܕܡܪܢ ܡܘܕܝܢܐ ܘܕܝܪܝܢܐ ܘܣܓܝܢܐ ܐܘܝܬܐ ܘܛܘܒܐ ܠܗܘܢ**
+
+**Transliteration:**
+**"B'sura d'Maran modayna w'dirayna w'segayna awita w'tuba l'hun"**
+
+**Translation:**
+**"By the blessing of our Lord, may you be prosperous, abundant, and wealthy."**
+
+This phrase asks for divine blessing and abundance, invoking prosperity and wealth. You can use this blessing in prayers, written on amulets, or recited during special occasions to seek luck and wealth.
 
 
 
