@@ -319,20 +319,26 @@ Here is an example of the layout for the Sigillum Dei Aemeth:
                 𐤀𐤊𐤋 (Anael)
 ```
 
-### Creating the Talisman
+### Creating the Talisman of Power and Self-Confidence
 
 1. **Material:** Draw or engrave the talisman on a piece of paper, parchment, or a metal disc.
 2. **Activation:** Charge the talisman with your intent through meditation, prayer, or ritual. You can recite invocations or prayers to the angels whose names are on the talisman.
 3. **Placement:** Keep the talisman in a place where you seek protection and divine guidance, such as your home, altar, or carry it with you.
 
-### Generated Image
 
-Here is a generated image based on the description above:
 
-```dalle.text2im
-{
-  "prompt": "A magical talisman designed as the Sigillum Dei Aemeth using the Enochian alphabet. The central part consists of a large heptagram (seven-pointed star) with an inner heptagon connecting the inner points of the heptagram. Surrounding the heptagram is a large outer circle. Within the spaces between the points of the heptagram and around the outer circle, write the names of the angels in the Enochian alphabet: Gabriel, Michael, Raphael, Uriel, Salathiel, Anael, and Zadkiel. The talisman should look mystical and ancient, with intricate designs and symbols enhancing its magical appearance. Use a parchment-like background to give it an aged, authentic look.",
-  "size": "1024x1024"
+             𐤌𐤀𐤃𐤓𐤉𐤀𐤎
+          --------------------------------
+         |                                |
+         |                                |
+         |                                |
+𐤋𐤏𐤍𐤔𐤇𐤉𐤍     (Your Sigil Here)     𐤋𐤏𐤍𐤔𐤇𐤉𐤍
+         |                                |
+         |                                |
+         |                                |
+          --------------------------------
+             𐤌𐤀𐤃𐤓𐤉𐤀𐤎
+
 }
 ```
 
