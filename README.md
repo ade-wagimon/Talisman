@@ -37,20 +37,70 @@ Here's a simple textual representation of how it can be arranged:
 
 # Graph Representation
 ```
-labels_updated = {
-    "center": "𐤄𐤐𐤂𐤇",
-    "top_left": "𐤁𐤉𐤀𐤉",
-    "top_right": "𐤋𐤁𐤉𐤀",
-    "mid_left": "𐤀𐤏𐤅𐤁𐤀",
-    "mid_right": "𐤃𐤀𐤒𐤀",
-    "bottom_left": "𐤃𐤀𐤒𐤀",
-    "bottom_right": "𐤃𐤓𐤏",
-    "bottom_left_corner": "𐤁𐤋𐤏𐤐",
-    "bottom_right_corner": "𐤀𐤋𐤄𐤐",
-    "bottom_left_outer": "𐤌𐤂𐤎",
-    "bottom_right_outer": "𐤋𐤅𐤇𐤀𐤉𐤌",
-    "bottom_center": "𐤀𐤌𐤂𐤎"
+import networkx as nx
+
+# Create a new graph for Neo4j-like visualization
+G_neo4j = nx.Graph()
+
+# Define the positions and relationships for the Neo4j format
+positions_neo4j = {
+    "𐤄𐤐𐤂𐤇": (0, 0),
+    "𐤁𐤉𐤀𐤉": (-1, 1),
+    "𐤋𐤁𐤉𐤀": (1, 1),
+    "𐤀𐤏𐤅𐤁𐤀": (-2, 0),
+    "𐤃𐤀𐤒𐤀": (2, 0),
+    "𐤃𐤀𐤒𐤀_b": (-1, -1),  # Duplicate name for visualization
+    "𐤃𐤓𐤏": (1, -1),
+    "𐤁𐤋𐤏𐤐": (-2, -2),
+    "𐤀𐤋𐤄𐤐": (2, -2),
+    "𐤌𐤂𐤎": (-1, -3),
+    "𐤋𐤅𐤇𐤀𐤉𐤌": (1, -3),
+    "𐤀𐤌𐤂𐤎_b": (0, -4)  # Duplicate name for visualization
 }
+
+edges_neo4j = [
+    ("𐤄𐤐𐤂𐤇", "𐤁𐤉𐤀𐤉"),
+    ("𐤄𐤐𐤂𐤇", "𐤋𐤁𐤉𐤀"),
+    ("𐤁𐤉𐤀𐤉", "𐤀𐤏𐤅𐤁𐤀"),
+    ("𐤋𐤁𐤉𐤀", "𐤃𐤀𐤒𐤀"),
+    ("𐤀𐤏𐤅𐤁𐤀", "𐤃𐤀𐤒𐤀_b"),
+    ("𐤃𐤀𐤒𐤀", "𐤃𐤓𐤏"),
+    ("𐤃𐤀𐤒𐤀_b", "𐤁𐤋𐤏𐤐"),
+    ("𐤃𐤓𐤏", "𐤀𐤋𐤄𐤐"),
+    ("𐤁𐤋𐤏𐤐", "𐤌𐤂𐤎"),
+    ("𐤀𐤋𐤄𐤐", "𐤋𐤅𐤇𐤀𐤉𐤌"),
+    ("𐤌𐤂𐤎", "𐤀𐤌𐤂𐤎_b"),
+    ("𐤋𐤅𐤇𐤀𐤉𐤌", "𐤀𐤌𐤂𐤎_b")
+]
+
+# Add nodes and edges to the new graph
+for node in positions_neo4j:
+    G_neo4j.add_node(node, pos=positions_neo4j[node])
+
+G_neo4j.add_edges_from(edges_neo4j)
+
+# Define labels
+labels_neo4j = {
+    "𐤄𐤐𐤂𐤇": "𐤄𐤐𐤂𐤇",
+    "𐤁𐤉𐤀𐤉": "𐤁𐤉𐤀𐤉",
+    "𐤋𐤁𐤉𐤀": "𐤋𐤁𐤉𐤀",
+    "𐤀𐤏𐤅𐤁𐤀": "𐤀𐤏𐤅𐤁𐤀",
+    "𐤃𐤀𐤒𐤀": "𐤃𐤀𐤒𐤀",
+    "𐤃𐤀𐤒𐤀_b": "𐤃𐤀𐤒𐤀",
+    "𐤃𐤓𐤏": "𐤃𐤓𐤏",
+    "𐤁𐤋𐤏𐤐": "𐤁𐤋𐤏𐤐",
+    "𐤀𐤋𐤄𐤐": "𐤀𐤋𐤄𐤐",
+    "𐤌𐤂𐤎": "𐤌𐤂𐤎",
+    "𐤋𐤅𐤇𐤀𐤉𐤌": "𐤋𐤅𐤇𐤀𐤉𐤌",
+    "𐤀𐤌𐤂𐤎_b": "𐤀𐤌𐤂𐤎"
+}
+
+# Draw the graph with the updated labels for Neo4j format
+pos_neo4j = nx.get_node_attributes(G_neo4j, 'pos')
+plt.figure(figsize=(8, 8))
+nx.draw(G_neo4j, pos_neo4j, with_labels=True, labels=labels_neo4j, font_size=15, node_size=5000, node_color="skyblue", font_color="black", font_weight="bold", edge_color="gray")
+plt.show()
+
 ```
 # Draw the graph with the updated labels
 plt.figure(figsize=(8, 8))
