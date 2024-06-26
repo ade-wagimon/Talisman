@@ -35,6 +35,29 @@ Here's a simple textual representation of how it can be arranged:
                        𐤀𐤌𐤂𐤎
 ```
 
+# Graph Representation
+```
+labels_updated = {
+    "center": "𐤄𐤐𐤂𐤇",
+    "top_left": "𐤁𐤉𐤀𐤉",
+    "top_right": "𐤋𐤁𐤉𐤀",
+    "mid_left": "𐤀𐤏𐤅𐤁𐤀",
+    "mid_right": "𐤃𐤀𐤒𐤀",
+    "bottom_left": "𐤃𐤀𐤒𐤀",
+    "bottom_right": "𐤃𐤓𐤏",
+    "bottom_left_corner": "𐤁𐤋𐤏𐤐",
+    "bottom_right_corner": "𐤀𐤋𐤄𐤐",
+    "bottom_left_outer": "𐤌𐤂𐤎",
+    "bottom_right_outer": "𐤋𐤅𐤇𐤀𐤉𐤌",
+    "bottom_center": "𐤀𐤌𐤂𐤎"
+}
+```
+# Draw the graph with the updated labels
+plt.figure(figsize=(8, 8))
+nx.draw(G, pos, with_labels=True, labels=labels_updated, font_size=15, node_size=5000, node_color="skyblue", font_color="black", font_weight="bold", edge_color="gray")
+plt.show()
+
+
 ### Using the Talisman
 
 - **Material:** Draw or engrave the talisman on a piece of paper, parchment, or a metal disc.
