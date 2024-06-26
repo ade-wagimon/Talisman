@@ -325,7 +325,7 @@ Here is an example of the layout for the Sigillum Dei Aemeth:
 2. **Activation:** Charge the talisman with your intent through meditation, prayer, or ritual. You can recite invocations or prayers to the angels whose names are on the talisman.
 3. **Placement:** Keep the talisman in a place where you seek protection and divine guidance, such as your home, altar, or carry it with you.
 
-
+```
 
              𐤌𐤀𐤃𐤓𐤉𐤀𐤎
           --------------------------------
